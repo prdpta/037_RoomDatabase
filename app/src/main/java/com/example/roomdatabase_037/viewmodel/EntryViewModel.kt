@@ -24,3 +24,10 @@ class EntryViewModel(
         }
     }
 
+    fun updateUIState(detailSiswa: DetailSiswa) {
+        uiStateSiswa = UIStateSiswa(
+            detailSiswa = detailSiswa,
+            isEntryValid = validasiInput(detailSiswa)
+        )
+    }
+
