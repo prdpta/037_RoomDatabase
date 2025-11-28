@@ -31,3 +31,14 @@ class EntryViewModel(
         )
     }
 
+    /* Fungsi untuk menyimpan data */
+    suspend fun saveSiswa() {
+        if (validasiInput()) {
+            // Pastikan nama fungsi repository benar -> insertSiswa()
+            repositoriSiswa.insertSiswa(
+                uiStateSiswa.detailSiswa.toSiswa()
+            )
+        }
+    }
+}
+
