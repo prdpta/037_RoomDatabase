@@ -14,3 +14,9 @@ object PenyediaViewModel {
             HomeViewModel(aplikasiSiswa().container.repositoriSiswa)
         }
 
+        initializer {
+            EntryViewModel(aplikasiSiswa().container.repositoriSiswa)
+        }
+    }
+}
+
