@@ -42,3 +42,11 @@ class EntryViewModel(
     }
 }
 
+/**
+ * Status UI
+ */
+data class UIStateSiswa(
+    val detailSiswa: DetailSiswa = DetailSiswa(),
+    val isEntryValid: Boolean = false
+)
+
