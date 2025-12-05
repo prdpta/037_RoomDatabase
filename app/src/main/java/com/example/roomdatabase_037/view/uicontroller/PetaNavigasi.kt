@@ -4,11 +4,16 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.example.roomdatabase_037.view.DetailSiswaScreen
 import com.example.roomdatabase_037.view.EntrySiswaScreen
 import com.example.roomdatabase_037.view.HomeScreen
+import com.example.roomdatabase_037.view.route.DestinasiDetailSiswa
+import com.example.roomdatabase_037.view.route.DestinasiDetailSiswa.itemIdArg
 import com.example.roomdatabase_037.view.route.DestinasiEntry
 import com.example.roomdatabase_037.view.route.DestinasiHome
 
@@ -40,5 +45,5 @@ fun HostNavigasi(
                 navigateBack = { navController.popBackStack() }
             )
         }
-    }
-}
+
+        composable(route = DestinasiDetailSiswa.routeWithArgs,
